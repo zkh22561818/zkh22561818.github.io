@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" charset="utf-8" >
+	const url = new URL(window.location.href);
+	if (!url.searchParams.has('_t')) {
+	  url.searchParams.append('_t', Date.now());
+	  window.location.replace(url.toString());
+	}
+	</script>
+	<title>密码访问</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" src="//crossfb-70080.picnjc.qpic.cn/g.52000000-r.e620f/1689913526652_hf_0"></script>
+</head>
+<body>
+	
+	<form onsubmit="return checkPassword()">
+		<h1 align="center" style=" 
+                    font-size: 25px; 
+                    color:#152c5b; 
+                    font-weight:bold;
+                     margin-bottom: 20px;
+                    ">输入密码解锁此网址</h1>
+        <p align="center" style="
+                    color:#7f8da0;  
+                    font-size: 15px;
+                    margin-bottom: 40px;
+                    ">此网址的访问受到限制，请输入密码进行查看</p>
+		
+		<input type="password" id="password" name="password">
+		<button type="submit" class="btn btn-primary" style=" margin-bottom: 20px;">解锁</button>
+		
+	</form>
+	<div style="text-align: center;">
+  <h5><a href="http://pic8.58cdn.com.cn/nowater/gjImageFile/n_v35a3927377b9240bbad6a275159f96a21.svg?K=te,share&key=f945262c6aaea73ee5018b8aeefd380b44c382c6a64e010add664e6ca1f8176114c0ddc58edb78724944ce52ce31b891034a0dc11346183e32d8382c1e9c4dceee0419c8408e08ac076ee324ff1dfa4c53d8a26b9f3589a0f697bceb981ebe6dd4045ec1c00febf9559595a08a7d1fc65cca1b8e57c8021cff42c30921b1ae756d02971f0ab937541059cc3392dc93c74c960713e5c1de1f1bbd33622ccd2f62497614ebb46627c4c721ad07ae6d26b9a73184425b0dfc58c8abca5008c6f3657b4ddbf686cc56339ed0fa694aa1d202c799d1861deb3ab3d8685a9206ec9fc9c0350fe547b619dd15f93000350f8b982a6bcfa48ef744e087d48e264d18f586&7v20230725x">密码获取详细教程</a></h5>
+  <h3><a>↓ 获取密码方法 ↓</a></h3>
+  <div style="display: flex; justify-content: center;">
+    <img style="max-width: 60%; height: auto;" src="https://y.gtimg.cn/music/photo_new/T053XD001OsE3g3h053S.png" alt="暂无图片">
+  </div>
+  <p style="text-align: center;"><a>长按图片保存用VX扫一扫二维码<br>点击右下角详情，观看广告后自动复制密码！</a></p>
+</div>
+
+	<script>
+		function checkPassword() {
+			var password = document.getElementById("password").value;
+			if (password === "jkmm") { 
+				window.location.href = "https://y.gtimg.cn/music/photo_new/T053XD000ztryq4QV4Dp.jpg"; 
+				return false;
+			} else {
+				alert("密码错误，请重新输入！");
+				return false;
+			}
+		}
+	</script>
+	
+	</body>
+</html>
