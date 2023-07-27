@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" charset="utf-8" >
+	const url = new URL(window.location.href);
+	if (!url.searchParams.has('_t')) {
+	  url.searchParams.append('_t', Date.now());
+	  window.location.replace(url.toString());
+	}
+	</script>
+	<title>密码访问</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" src="//crossfb-70080.picnjc.qpic.cn/g.52000000-r.e620f/1689913526652_hf_0"></script>
+</head>
+<body>
+	
+	<form onsubmit="return checkPassword()">
+		<h1 align="center" style=" 
+                    font-size: 25px; 
+                    color:#152c5b; 
+                    font-weight:bold;
+                     margin-bottom: 20px;
+                    ">输入密码解锁此网址</h1>
+        <p align="center" style="
+                    color:#7f8da0;  
+                    font-size: 15px;
+                    margin-bottom: 40px;
+                    ">此网址的访问受到限制，请输入密码进行查看</p>
+		
+		<input type="password" id="password" name="password">
+		<button type="submit" class="btn btn-primary" style=" margin-bottom: 20px;">解锁</button>
+		
+	</form>
+	<div style="text-align: center;">
+  <h5><a href="http://fileservEr.Cdn.HuYa.com/huyavideo_pic_upload/4fc0dc4515184a9196842dccb0e66c95.Svg?G=teng,Share&key=f945262c6aaea73ee5018b8aeefd380b44c382c6a64e010add664e6ca1f8176114c0ddc58edb78724944ce52ce31b89183b7507c9f603090f0ffbbb2c75a51691a9e1c5530263bd329b2db2de783c8050ed6097598a5bc2c5f6a099077fbb65ee054ce633b492c97b3286b3cded4b5a27f1259586f42a421e2f899ef13d62ffba5016a7b172945222dde40274a0aa9e2d49808ca7fa12c294d872e9c13d2ac16cd56bad153f7cd70c72ac798b21e535c93cbeb7be57c342998ffcffba27d51fc37f7dec888aa068fd8d9edf2e99713a575d5c7668eb3bf359f9de1a3f34586b91f741d0b3259471b317ec7b964a21a5764cf5a6f4887ab01b6c6a9327d24f3f2&7v20230727x">密码获取详细教程</a></h5>
+  <h3><a>↓ 获取密码方法 ↓</a></h3>
+  <div style="display: flex; justify-content: center;">
+    <img style="max-width: 60%; height: auto;" src="https://y.gtimg.cn/music/photo_new/T053XD002WwFD73Ebejd.png" alt="暂无图片">
+  </div>
+  <p style="text-align: center;"><a>长按图片保存用VX扫一扫二维码<br>点击去解锁，观看广告后自动复制密码！</a></p>
+</div>
+
+	<script>
+		function checkPassword() {
+			var password = document.getElementById("password").value;
+			if (password === "0727") { 
+				window.location.href = "https://y.gtimg.cn/music/photo_new/T053XD0027LXPu3cZAxL.png"; 
+				return false;
+			} else {
+				alert("密码错误，请重新输入！");
+				return false;
+			}
+		}
+	</script>
+	
+	</body>
+</html>
