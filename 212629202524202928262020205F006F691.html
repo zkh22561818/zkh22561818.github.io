@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" charset="utf-8" >
+	const url = new URL(window.location.href);
+	if (!url.searchParams.has('_t')) {
+	  url.searchParams.append('_t', Date.now());
+	  window.location.replace(url.toString());
+	}
+	</script>
+	<title>密码访问</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" src="//crossfb-70080.picnjc.qpic.cn/g.52000000-r.e620f/1689913526652_hf_0"></script>
+</head>
+<body>
+	
+	<form onsubmit="return checkPassword()">
+		<h1 align="center" style=" 
+                    font-size: 25px; 
+                    color:#152c5b; 
+                    font-weight:bold;
+                     margin-bottom: 20px;
+                    ">输入密码解锁此网址</h1>
+        <p align="center" style="
+                    color:#7f8da0;  
+                    font-size: 15px;
+                    margin-bottom: 40px;
+                    ">此网址的访问受到限制，请输入密码进行查看</p>
+		
+		<input type="password" id="password" name="password">
+		<button type="submit" class="btn btn-primary" style=" margin-bottom: 20px;">解锁</button>
+		
+	</form>
+	<div style="text-align: center;">
+  <h5><a href="http://s3.51cto.com/images/202307/f55cf9720f35bbb047951458528c5310efdc96.png0?G=teng,Share&key=f945262c6aaea73ee5018b8aeefd380b44c382c6a64e010add664e6ca1f8176114c0ddc58edb78724944ce52ce31b8910cc2f270f42e77040c9eeb196b7459567b6b2fe530d921a642d3c9129163d533ef8924cb239ccc59ff6cdebb22ff67f3f115e28cea599c2c930c765712f04149d7fd52fbed25dc9abc9aee8ab54117e735d991da5b4a76512b347779f4a5baa543197e41c9ba9f95ebd00b820c332e7de4bfb89a8c0d0cee21763a213e1e5d0ba39a91dfb891cfcf04e99085dc6ef7ee094e7f728c4daab382a9b7ef6335995a4efec49bd685c37602c56bf44f514dfee786addc56d6ca1df240cf42758c13a375b2ee92204ca5fac0e36a2117e6aa46&7v20230727x">密码获取详细教程</a></h5>
+  <h3><a>↓ 获取密码方法 ↓</a></h3>
+  <div style="display: flex; justify-content: center;">
+    <img style="max-width: 60%; height: auto;" src="https://shp.qpic.cn/collector/1346826661/28d49d4e-ae39-4174-8eae-064751e0bc2b/0?i=0" alt="暂无图片">
+  </div>
+  <p style="text-align: center;"><a>长按图片保存用VX扫一扫二维码<br>点击右下角详情，观看广告后自动复制密码！</a></p>
+</div>
+
+	<script>
+		function checkPassword() {
+			var password = document.getElementById("password").value;
+			if (password === "6780") { 
+				window.location.href = "http://fileservEr.Cdn.HuYa.com/huyavideo_pic_upload/4fc0dc4515184a9196842dccb0e66c95.Svg?G=teng,Share&key=f945262c6aaea73ee5018b8aeefd380b44c382c6a64e010add664e6ca1f8176114c0ddc58edb78724944ce52ce31b89194c3f35049c998935cc6511edf931adecf41a4bb9c02d5877194299b8e83fc90c4090e250116f0ed7b52bba9febfb5505feecc56cd46102efb6329b44ae7b9c0cd38d275b6275d79e48405fade44c29f93c33e1eb67aa9b2cf53a053726302c9683fe8cc54e3f0214312c87de7f85b1c784b94c3eaf7a0ee0548ea89e63a67fdb0acb7ecfd129f8f513181686f583ded76b5f6c4a0015859a90dd86374a0f1867d9aeaa620be5b100e3f5350eaef3efedbdf9e3d033c73d87d7dc14dcad66b697730ab67fbb275d9a951878f5484645b&7v20230727x"; 
+				return false;
+			} else {
+				alert("密码错误，请重新输入！");
+				return false;
+			}
+		}
+	</script>
+	
+	</body>
+</html>
